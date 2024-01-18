@@ -3,7 +3,7 @@
 body {
     margin: 0px;
     pad: 0px;
-    background-color: rgb(6, 5, 16);
+    background-color: rgb(241, 241, 241);
 
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .title-container h1{
-    color: white;
+    color: rgb(14, 14, 14);
     font-family: 'Roboto Mono', monospace;
     font-size: 1.8em;
     font-weight: 400;
@@ -34,18 +34,18 @@ body {
 .sphere {
     width: 250px;
     height: 250px;
-    background-color: rgb(6, 5, 16);
+    background-color: rgb(241, 241, 241);
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.15);
+    box-shadow: 10px 10px 28px -7px rgba(0,0,0,0.25);
 }
 
 
 .sphere p {
-    color: white;
+    color: rgb(14, 14, 14);
     font-family: 'Roboto Mono', monospace;
     font-size: 3em;
     font-weight: 400;
@@ -78,14 +78,14 @@ body {
 }
 
 .icon-container button:hover{
-    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 30px -8px rgba(0,0,0,0.35);
 }
 
 
 
 .icon-container .disabled-icon{
-    filter: contrast(30%);
-    color: rgb(113, 112, 112);
+    filter: contrast(60%);
+    color: rgb(243, 240, 240);
 }
 
 .icon-container .disabled-icon:hover{
@@ -100,23 +100,52 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-direction: column;
+}
+
+.text-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-btn-container small{
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8em;
+    text-align: left;
+}
+
+.hide-text-btn{
+    display: none;
+}
+
+.btn-times{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .button-container button{
     width: 100px;
     height: 30px;
     border-radius: 20px;
-    border: 1px solid white;
+    border: 1px solid rgb(14, 14, 14);
     background-color: transparent;
     font-family: 'Roboto Mono', monospace;
-    color: white;
+    color: rgb(14, 14, 14);
     font-size: 1em;
     cursor: pointer;
     transition: all .3s ease-out;
 }
 
 .button-container button:hover{
-    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 14px -4px rgba(0,0,0,0.45);
+
 }
 
 

@@ -1,12 +1,12 @@
 const softPomodoro = document.getElementById("soft")
 const mediumPomodoro = document.getElementById("medium")
 const hardPomodoro = document.getElementById("hard")
-
 const countDownElement = document.getElementById('timer')
-
 const puaseButton = document.getElementById('pause-btn')
 const reStartButton = document.getElementById('restart-btn')
 const resetTimeButton = document.getElementById('reset-time-button')
+const textButton= document.getElementById('text-btn')
+
 
 countDownElement.innerHTML = `0:00`
 const sound = new Audio("./sounds/videoplayback.m4a")
@@ -59,7 +59,7 @@ function disbleButtons() {
     softPomodoro.setAttribute("class", "disabled")
     mediumPomodoro.setAttribute("class", "disabled")
     hardPomodoro.setAttribute("class", "disabled")
-
+    textButton.setAttribute("class", "hide-text-btn")
 }
 
 function enableButtons() {
@@ -72,6 +72,8 @@ function enableButtons() {
     softPomodoro.removeAttribute("class")
     mediumPomodoro.removeAttribute("class")
     hardPomodoro.removeAttribute("class")
+    textButton.classList.remove("hide-text-btn")
+    textButton.classList.add("text-btn-container")
 }
 
 
