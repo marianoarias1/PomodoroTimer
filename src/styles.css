@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;600&display=swap');
+
+body {
+    margin: 0px;
+    pad: 0px;
+    background-color: rgb(6, 5, 16);
+
+}
+
+.sphere-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.title-container{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container h1{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.sphere {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(6, 5, 16);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.15);
+}
+
+
+.sphere p {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.icon-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon{
+    height: 25px;
+    width: 25px;
+}
+
+.icon-container button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    border: none;
+}
+
+.icon-container button:hover{
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+}
+
+
+
+.icon-container .disabled-icon{
+    filter: contrast(30%);
+    color: rgb(113, 112, 112);
+}
+
+.icon-container .disabled-icon:hover{
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+
+.button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-container button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.button-container button:hover{
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+.button-container .disabled{
+    background-color: rgba(53, 53, 53, 0.316);
+    color: rgb(113, 112, 112);
+}
+
+.button-container .disabled:hover{
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.footer .text-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .text-footer p{
+    font-family: 'Nunito', sans-serif;
+    color: rgb(75, 75, 75) ;
+    font-size: 1.1em;
+}
+
+.icon-container a{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-container a img{
+    width: 45px;
+    height: 45px;
+}

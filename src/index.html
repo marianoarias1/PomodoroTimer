@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pomodoro Timer ⌛</title>
+</head>
+
+<body>
+    <div class="sphere-container">
+        <div class="title-container">
+            <h1>Pomodoro Timer</h1>
+        </div>
+        <div class="sphere">
+            <p id="timer"></p>
+            <div class="icon-container">
+                <button id="pause-btn" class="disabled-icon" disabled><img class="icon" src="./icons/pauseIcon.svg"
+                        alt=""></button>
+                <button id="restart-btn" class="disabled-icon" disabled><img class="icon" src="./icons/playIcon.svg"
+                        alt=""></button>
+                <button id="reset-time-button" class="disabled-icon" disabled><img class="icon"
+                        src="./icons/resetIcon.svg" alt=""></button>
+            </div>
+
+        </div>
+        <div class="button-container">
+            <button id="soft">25 / 5</button>
+            <button id="medium">40 / 20</button>
+            <button id="hard">60 / 30</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="text-footer">
+            <p>Hecho por Mariano Arias, todos los derechos reservados ©2024</p>
+        </div>
+
+        <div class="icon-container">
+            <a href="https://www.linkedin.com/in/mariano-arias1/" target="_blank"><img src="./image/logoLinkedin.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
